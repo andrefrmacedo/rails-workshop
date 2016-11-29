@@ -1,0 +1,9 @@
+<%= form_for :task, url: task_path, method: :patch do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
