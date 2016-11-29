@@ -3,11 +3,12 @@
 <ul>
   <% @tasks.each do |task| %>
     <li>
-      <%= task.name %>
       <% if task.done %>
-        Done
+        <s><%= task.name %></s>
+        <%= link_to 'Undo', task_done_path(task), method: :patch %>
       <% else %>
-        Not done
+        <%= task.name %>
+        <%= link_to 'Done', task_done_path(task), method: :patch %>
       <% end %>
       <%= link_to 'Edit', edit_task_path(task) %>
       <%= link_to 'Delete', task_path(task), method: :delete %>
