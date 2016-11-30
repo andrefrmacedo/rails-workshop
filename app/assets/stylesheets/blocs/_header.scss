@@ -1,0 +1,19 @@
+/*
+--------------------------------------------------------------------------------
+Header
+--------------------------------------------------------------------------------
+*/
+header {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: solid $light 1px;
+  padding: 1rem 3rem;
+
+  a {
+    color: $red;
+    font-weight: bold;
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,15 @@
+footer {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-top: solid $light 1px;
+  padding: 1rem;
+  margin-top: 5rem;
+
+  a {
+    color: $red;
+    font-weight: bold;
+    align-self: flex-end;
+  }
+}

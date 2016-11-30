@@ -1,0 +1,33 @@
+ul {
+  width: 80%;
+
+  li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid $light 1px;
+    padding: 0.6rem 1rem;
+    a {
+      font-size: 1.4rem;
+      color: rgba($dark,0.7);
+      padding-right: 1rem;
+
+      &+a {
+        border-left: solid $dark 2px;
+        padding-left: 1rem;
+      }
+
+      &:hover {
+        @include transition(0.1);
+        color: $dark;
+      }
+    }
+
+    span {
+      a {
+        border-right: solid $dark 2px;
+        margin-right: 3rem;
+      }
+    }
+  }
+}
