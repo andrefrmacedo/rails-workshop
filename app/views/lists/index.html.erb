@@ -4,6 +4,7 @@
     <li>
         <%= list.name %>
         <%= link_to 'Open', list_path(list) %>
+        <%= link_to 'Delete', list_path(list), method: :delete %>
     </li>
   <% end %>
 </ul>
