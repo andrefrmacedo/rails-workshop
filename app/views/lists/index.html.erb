@@ -3,6 +3,7 @@
   <% @lists.each do |list| %>
     <li>
         <%= list.name %>
+        <%= link_to 'Open', list_path(list) %>
     </li>
   <% end %>
 </ul>
