@@ -3,10 +3,12 @@
   <% @lists.each do |list| %>
     <li>
         <%= list.name %>
+        <div>
         <%= link_to 'Open', list_path(list) %>
         <%= link_to 'Delete', list_path(list), method: :delete %>
+      </div>
     </li>
   <% end %>
 </ul>
 
-<%= link_to 'Create new list', new_list_path %>
+<button><%= link_to 'Create new list', new_list_path %></button>
